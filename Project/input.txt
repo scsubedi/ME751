@@ -1,0 +1,37 @@
+% The first body i
+1
+
+% Thegrounded body j
+0
+
+% Length of pendulum in L in m
+2
+
+% Driving Function
+pi/4*cos(2*t)
+
+
+% Temperature
+30
+
+
+% Joint
+Revolute
+
+
+% Function
+@(t)pi/4*cos(2*t)
+
+
+%Time step dt
+-2
+
+
+% Start time
+0
+
+
+% Final Time
+10
+
+
