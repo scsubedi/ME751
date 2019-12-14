@@ -1,0 +1,31 @@
+- - - - - - - - - - - - 
+The bodies I and J have a DP2 constraint. 
+The body J is Ungrounded. 
+- - - - - - - - - - - - - - - - - - - - - - - - - - -
+The value of the expression of the constraint is -5.675982 
+- - - - - - - - - - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - - - - - - - - - -
+The right-hand side of the velocity equation(mu) is 1.18878 
+- - - - - - - - - - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - - - - - - - - - -
+The right-hand side of the acceleration equation(gamma) is 3589.10500 
+- - - - - - - - - - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - - - - - - - - - -
+The expression for partial derivatives phi_R:
+phi_Ri = 1.556417e+00.
+phi_Ri = -1.140200e+00.
+phi_Ri = 1.021299e+00.
+phi_Rj = -1.556417e+00.
+phi_Rj = 1.140200e+00.
+phi_Rj = -1.021299e+00.
+- - - - - - - - - - - - - - - - - - - - - - - - - - -
+The expression for partial derivatives phi_P:
+phi_Ri = 1.232048e+01.
+phi_Ri = 2.504825e+01.
+phi_Ri = 7.659858e+00.
+phi_Ri = 1.924244e+01.
+phi_Rj = 8.064016e-01.
+phi_Rj = -1.266414e+01.
+phi_Rj = 2.056201e+00.
+phi_Rj = 2.930579e+00.
+- - - - - - - - - - - - - - - - - - - - - - - - - - -

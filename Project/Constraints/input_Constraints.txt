@@ -1,0 +1,52 @@
+%%%%%%% Use this file to define all the inputs and also to check the constraints %%%%%%%%%
+
+%% Project Details %%%%%
+
+%%%% coordinate difference c %%%%%%%%%
+0.3,0.4,-6
+
+% r_i %%%%%%%%%%%
+8, 6,-3
+
+% r_iDot %%%%%%%%%%%%
+7,8,9;
+
+% ei%%%%%%%%%%
+0.4201, -0.7001, 0.1400
+
+% eiDot%%%%%%%%%%
+0.3566 0.9326 0;
+
+% a_iBar %%%%%%%%%%%%
+-1.2, 1 ,0.3;
+
+% driving function%%%%%%%%
+@(t)pi/4*cos(2*t)
+
+%time%%%%%%%%%%%
+2
+
+% r_j %%%%%%%%%%%%
+-0.5,1.6,-6.3;
+
+
+%r_jDot %%%%%%%%%%%%%
+11, 12, 13;
+
+% ej %%%%%%%%%%
+0.2 0.2 0.2;
+
+% ejDot %%%%%%%%%%
+ 1 2 9;
+
+% a_jBar %%%%%%%%%%%%
+ 3 5 2;
+
+% Checks return the specified output requested, % flag = 1 : Returns the value of the expression of the constraint,% flag = 2 : Returns the right-hand side of the velocity equation,% flag = 3 : Returns the right-hand side of the acceleration equation,% flag = 4  Returns the expression of partial derivatives % flag = 5 : Returns the expression of partial derivatives
+2
+
+% GroundStatus,  Grounded : 1, UnGrounded: 0 %%%%%%%%%%%%%%%%
+1
+
+% Constraint : 1 = CD, 2 = DP1, 3 = DP2, 4 = D %%%%%%%%%%%%%%%%
+2

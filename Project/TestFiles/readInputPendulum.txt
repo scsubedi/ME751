@@ -1,0 +1,22 @@
+%Body 0= i
+0
+
+%Body 1 = j
+1
+
+%length of Pendulum (L)
+2
+
+%Driving function
+@(t)cos(theta(t) + pi/2);
+
+%Time for simulation
+0:0.001:1
+
+%Position of P 
+-1,0,0
+
+%Position of Q
+ 0,0,0
+
+%Driving function

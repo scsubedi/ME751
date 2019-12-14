@@ -1,0 +1,30 @@
+- - - - - - - - - - - - 
+The bodies I and J have a CD constraint. 
+The body J is Ungrounded. 
+- - - - - - - - - - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - - - - - - - - - -
+The right-hand side of the velocity equation(mu) is 1.18878 
+- - - - - - - - - - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - - - - - - - - - -
+The right-hand side of the acceleration equation(gamma) is 2.05348 
+- - - - - - - - - - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - - - - - - - - - -
+The expression for partial derivatives phi_R:
+phi_Ri = 0.
+phi_Ri = 0.
+phi_Ri = -1.
+phi_Rj = 0.
+phi_Rj = 0.
+phi_Rj = 1.
+- - - - - - - - - - - - - - - - - - - - - - - - - - -
+The expression for partial derivatives phi_P:
+phi_Ri = 0.
+phi_Ri = -8.
+phi_Ri = 0.
+phi_Ri = -8.
+phi_Rj = 0.
+phi_Rj = 6.
+phi_Rj = 0.
+phi_Rj = 6.
+- - - - - - - - - - - - - - - - - - - - - - - - - - -

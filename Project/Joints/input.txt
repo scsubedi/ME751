@@ -1,0 +1,44 @@
+%Use this file to define all body attributes and constraints
+
+% Project Details 
+
+% Body 1/i 
+1
+
+% Body 2/j: grounded 
+0
+
+% Length of Pendulum (L) 
+2
+
+% Location of P on first body 
+-1, 0, 0
+
+% Location of Q on second body 
+0,0,0;
+
+% time for simulation 
+0:0.10:10
+
+% driving function
+@(t)pi/4*cos(2*t)
+
+% Joint type: Revolute, Spherical, Universal, Cylindrical, Translational, Perpendicular1, Perpendicular2
+Revolute
+
+% Save results : saveVideo, Plots, both
+Both
+
+% Force, Torque type: None, TSDA, RSDA
+None
+
+% Stiffiness of Spring
+25
+
+%Damping Coefficient
+10
+
+% initial length of spring l0
+1
+
+

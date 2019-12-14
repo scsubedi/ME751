@@ -1,0 +1,24 @@
+% The first body i or 1
+1
+
+% Thegrounded body j or 0
+0
+
+% Length of pendulum in L in m
+2
+
+% Driving Function
+@(t)pi/4*cos(2*t)
+
+% Joint
+Revolute
+
+%Time Simulation
+0:0.001:10
+
+%U_ivector
+0 0 0.3
+
+
+%R_ivector
+0 0 0.8

@@ -1,0 +1,10 @@
+% Min period
+1
+% Max period
+10
+% Directory
+'/home/Waves'
+% Times
+0:0.001:50
+% JointTYpe
+sphecical
