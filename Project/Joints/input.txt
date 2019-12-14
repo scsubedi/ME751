@@ -23,10 +23,10 @@
 % driving function
 @(t)pi/4*cos(2*t)
 
-% Joint type: Revolute, Spherical, Universal, Cylindrical, Translational, Perpendicular1, Perpendicular2
+% Joint type: Revolute, Spherical, Universal, Cylindrical, Perpendicular1, Perpendicular2
 Revolute
 
-% Save results : saveVideo, Plots, both
+% Save results : saveVideo, Plots, Both, None
 Both
 
 % Force, Torque type: None, TSDA, RSDA

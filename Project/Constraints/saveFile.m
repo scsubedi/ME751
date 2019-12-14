@@ -4,7 +4,7 @@
 % Input: Results (array of all the computed results)
 %        Constraint (name of the goemetric constraint
 %        groundcondition (describes the status of body J)
-% Output: B(4 x 3) matrix
+% Output: File with all the results
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 function file = saveFile(Results, constraint,groundCondition,fileName)
