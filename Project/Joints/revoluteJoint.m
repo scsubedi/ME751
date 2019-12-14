@@ -16,7 +16,9 @@ A1 = @(th)[0,  0,      1;                        % Rotation matrix as a function
 theta = @(t)pi/4*cos(2*t);                       % theta, followed by its time derivatives
 dtheta = @(t)-pi/2*sin(2*t);
 ddtheta = @(t)-pi*cos(2*t);
-
+ if strcmp(dynamicAnalysis, 'Yes')
+        disp('Running an Inverse Dynamic Analysis')
+ end
 % variables derived from above input
 for n = 1:length(ts)
     t = ts(n);
@@ -103,6 +105,63 @@ for n = 1:length(ts)
     qddot(:,n) = Phi_q\gamma;
     q_ddot(:,n) = A1(theta0)\qddot(1:3,n);% in L-RF
     
+    % Inverse Dynamic Analysis
+    if strcmp(dynamicAnalysis, 'Yes')
+        
+    rddot = qddot(1:3,n);
+    pddot = qddot(4:end,n);
+    nb = 1;
+    Mmatrix  = M*eye(3);
+    Jbar = diag(J)*eye(3);
+    Gmatrix = [p1(2:4),tilda(p1)+p1(1)*eye(3)];
+    Gdot = [p1dot(2:4),tilda(p1dot)+p1dot(1)*eye(3)];
+    nBar = zeros(3,1);
+    tauHat = 2*Gmatrix'*nBar + 8*Gdot'*Jbar*Gdot*p1;
+    Jp = 4*Gmatrix'*Jbar*Gmatrix;
+    Fvector = [0 0 M*9.81]';
+    
+    % Left hand side (LHS) matrix :
+    %   [phi_r' zeros(3*nb,nb);
+    %    phi_p'        P1]
+    
+    LHS = [dphi_dr(w,:)' zeros(3,1)
+        dphi_dp(w,:)', p1];
+    
+    % RHS matrix :
+    %       -[  M*rddot - F;
+    %         J^p*pddot - tauHat]
+    
+    RHS = -[Mmatrix*rddot - Fvector;
+        Jp*pddot - tauHat];
+    
+    % lagrange multipliers Lambdas
+    lambda = LHS\RHS;
+    lambdaVector = lambda(1)*ones(7,1);
+    % for reaction forces
+    phi_r_i = dphi_dr(:,(3*1-2):3*1);
+    rForce = -phi_r_i'*lambdaVector;
+    
+    % for reaction torque
+    phi_p_i = dphi_dp(:,(4*1-3):4*1);
+    rTorque = phi_p_i'*lambdaVector;
+    
+    % this reaction torque is in r-p formulation, we need to convert this to
+    % r-w formulation
+    magnitude = sqrt(rTorque'*rTorque);
+    pf = rTorque/magnitude;
+    torque = pf(2)/sqrt(1-pf(1)^2)*magnitude;
+    Torque(n) = torque;
+    end
 end
-
 output = {Phi_q, q,qbar, qdot q_dot qddot q_ddot ts};
+
+if strcmp(dynamicAnalysis,'Yes')
+    figure(2)
+    plot(ts,Torque)
+    grid on
+    title('Reaction torque on a pendulum')
+    xlabel('Time(s)')
+    ylabel('Torque')
+    box on
+    print('-dpng','-painters','ReactionTorque.png');
+ end

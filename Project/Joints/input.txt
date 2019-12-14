@@ -41,4 +41,12 @@ None
 % initial length of spring l0
 1
 
+% Run Dynamic Analysis: Yes, No
+Yes
+
+% For Dynamic Analysis, Density rho
+7800;
+
+% Width
+0.05;
 

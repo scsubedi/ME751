@@ -1,0 +1,27 @@
+- - - - - - - - - - - - 
+The bodies I and J have a DP1 constraint. 
+The body J is Grounded. 
+- - - - - - - - - - - - - - - - - - - - - - - - - - -
+The value of the expression of the constraint is 0.513370 
+- - - - - - - - - - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - - - - - - - - - -
+The right-hand side of the velocity equation(mu) is 1.18878 
+- - - - - - - - - - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - - - - - - - - - -
+The right-hand side of the acceleration equation(gamma) is 2.05348 
+- - - - - - - - - - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - - - - - - - - - -
+The expression for partial derivatives phi_R:
+phi_Ri = 0.
+phi_Ri = 0.
+phi_Ri = 0.
+phi_Ri = 0.
+phi_Ri = 0.
+phi_Ri = 0.
+- - - - - - - - - - - - - - - - - - - - - - - - - - -
+The expression for partial derivatives phi_P:
+phi_Ri = 0.
+phi_Ri = 0.
+phi_Ri = 0.
+phi_Ri = 0.
+- - - - - - - - - - - - - - - - - - - - - - - - - - -

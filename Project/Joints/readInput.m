@@ -33,3 +33,16 @@ type = val{12,2};
 k = str2num(val{13,2});
 c0 = str2num(val{14,2});
 l0 = str2num(val{15,2});
+
+dynamicAnalysis = val{16,2};
+
+rho = str2num(val{17,2});
+width = str2num(val{18,2});
+Vol = 2*L*width*width;
+len = 2*L;
+M = rho*Vol;
+J = 1/12*M*(width^2 + width^2);
+Ix = 1/12*M * (len^2 + width^2);
+Iy = 1/12*M * (len^2 + width^2);
+Iz = 1/12*M * (2*width^2);
+torque = zeros(length(ts),1);
