@@ -24,13 +24,13 @@
 @(t)pi/4*cos(2*t)
 
 % Joint type: Revolute, Spherical, Universal, Cylindrical, Perpendicular1, Perpendicular2
-Revolute
+None
 
 % Save results : saveVideo, Plots, Both, None
 Both
 
 % Force, Torque type: None, TSDA, RSDA
-None
+TSDA
 
 % Stiffiness of Spring
 25

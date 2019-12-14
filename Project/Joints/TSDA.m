@@ -65,7 +65,7 @@ end
 figure(1)
 plot(ts,nTSDA_1)
 grid on
-title('Concentrated Torque due to Translational Spring-Damper-Actuator(TSDA)')
+title('Concentrated Force due to Translational Spring-Damper-Actuator(TSDA)')
 xlabel('Time(s)')
 ylabel('Torque')
 print('-dpng','-painters','TSDA.png');
